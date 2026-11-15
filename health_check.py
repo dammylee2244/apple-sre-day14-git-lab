@@ -1,6 +1,8 @@
 import shutil
 from pathlib import Path
 
+# Linux disk monitoring for SRE practice
+
 def check_disk():
 
     usage = shutil.disk_usage(Path.home())
