@@ -18,6 +18,7 @@ class TestMonitoring(unittest.TestCase):
         health_check.check_disk()
         mock_disk.assert_called_once()
 
+
     @patch("memory_check.psutil.virtual_memory")
     def test_memory_check_runs(self, mock_memory):
         mock_memory.return_value = Mock(
